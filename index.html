@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="sidebar">
+        <div class="top__bar">
+          <input
+            class="sidebar__item"
+            type="number"
+            name="width"
+            id="width"
+            value="3"
+          />
+          <input class="sidebar__item" type="color" name="color" id="color" />
+        </div>
+        <div class="bottom__bar">
+          <a
+            href="#"
+            class="save"
+            download="myImage.jpg"
+            onclick="download_img(this);"
+            >Save</a
+          >
+          <button class="sidebar__item" id="clear">
+            <i class="fa fa-trash"></i>
+          </button>
+        </div>
+      </div>
+      <canvas id="canvas" width="1920" height="908"></canvas>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
